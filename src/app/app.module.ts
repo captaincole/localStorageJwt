@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { CustomInfiniteComp } from '../components/infinite-custom.comp';
 
 import { AuthHttp, AuthConfig } from 'angular2-jwt';
 
@@ -27,7 +28,8 @@ export function getAuthHttp(http) {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    CustomInfiniteComp
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -39,7 +41,8 @@ export function getAuthHttp(http) {
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    CustomInfiniteComp
   ],
   providers: [
     {
